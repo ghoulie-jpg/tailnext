@@ -40,8 +40,9 @@ export default function Page() {
   return (
     <>
 
-      <Hero {...heroHome} />
       <CarouselCustomNavigation/>
+      <Hero {...heroHome} />
+
       <SocialProof {...socialProofHome} />
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />

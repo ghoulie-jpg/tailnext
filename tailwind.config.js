@@ -31,6 +31,25 @@ module.exports = withMT({
         black: '900',
         // You can add or override default Tailwind font weights here
       },
+      carousel: {
+        styles: {
+          base: {
+            carousel: {
+              position: "relative",
+              width: "40px",
+              height: "30px",
+              overflowX: "overflow-x-hidden",
+              display: "flex",
+            },
+            slide: {
+              width: "100%", // Keep slide width relative to the carousel
+              height: "100%", // Keep slide height relative to the carousel
+              display: "inline-block",
+              flex: "flex-none",
+            },
+          },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
