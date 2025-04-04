@@ -36,15 +36,43 @@ import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import gasImg from '~/assets/images/gas.jpg';
+import SquareDiv from '~/components/widgets/home_div';
+import { Montserrat } from 'next/font/google';
+import { CarouselCustomNavigation } from '~/components/widgets/Carousel';
+
+
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
   title: (
-    <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
-    </>
-  ),
+    <div className="relative">
+      {/* Background image */}
+      <div
+        className="absolute top-0 left-0 w-full h-64 bg-cover bg-top"
+        /*style={{ backgroundImage: `url(${heroImg.src})` }}*/
+      />
+      {/* Foreground content */}
+      <div className="relative z-10 flex items-start justify-start h-100 p-0"> {/*Removed parent padding*/}
+        <SquareDiv padding="1.5rem">
+        <div className="flex flex-col items-start">
+        <div>
+      {/* You can still use the 'sans' class if you kept its definition */}
+    </div>
+    <div className="text-left font-montserrat font-thin tracking-wider">
+          Mobile
+      </div>
+      <div className="text-left font-montserrat font-thin tracking-wider">
+          Veterinary
+      </div>
+      <div className="text-left font-montserrat font-thin tracking-wider  ">
+          Services
+      </div>
+  </div>
+    </SquareDiv>
+      </div>
+    </div>
+  ),  
+  /*
   subtitle: (
     <>
       <span className="hidden md:inline">
@@ -66,12 +94,17 @@ export const heroHome: HeroProps = {
   callToAction2: {
     text: 'Learn more',
     href: '/',
-  },
+  },*/
+  /*
   image: {
     src: heroImg,
     alt: 'Hero TailNext',
   },
+  */
 };
+
+
+
 
 // SocialProof data on Home page *******************
 export const socialProofHome: SocialProofProps = {
@@ -208,10 +241,12 @@ export const contentHomeOne: ContentProps = {
         'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
     },
   ],
+  /*
   image: {
     src: cameraFrontImg,
     alt: 'Colorful Image',
   },
+  */
   isReversed: false,
   isAfterContent: false,
 };
@@ -300,7 +335,7 @@ export const testimonialsHome: TestimonialsProps = {
   testimonials: [
     {
       name: 'Tayla Kirsten',
-      job: 'Marketing Manager',
+      job: 'Marketing Manager', 
       testimonial: `I'm impressed by the speed and performance of these templates. My website now loads in the blink of an eye, significantly enhancing my visitors' experience. Thanks to TailNext, my online business is thriving.`,
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',

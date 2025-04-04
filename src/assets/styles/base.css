@@ -15,11 +15,16 @@
     @apply border-primary-600 dark:border-primary-700 hover:border-primary-800 dark:hover:border-primary-900 bg-primary-600 dark:bg-primary-700 hover:bg-primary-800 dark:hover:bg-primary-900 font-semibold text-white dark:text-white hover:text-white;
   }
 
-  .card {
+  /* .card {
     @apply rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-6 py-8 w-full;
-  }
+  } */
 
   .ribbon {
     @apply absolute top-[19px] right-[-21px] block w-full rotate-45 bg-green-700 text-center text-[10px] font-bold uppercase leading-5 text-white shadow-[0_3px_10px_-5px_rgba(0,0,0,0.3)] before:absolute before:left-0 before:top-full before:z-[-1] before:border-[3px] before:border-r-transparent before:border-b-transparent before:border-l-green-800 before:border-t-green-800 before:content-[''] after:absolute after:right-0 after:top-full after:z-[-1] after:border-[3px] after:border-l-transparent after:border-b-transparent after:border-r-green-800 after:border-t-green-800 after:content-[''];
+  }
+
+  .custom-carousel-container {
+    width: 40px; /* Your desired width */
+    height: 30px; /* Your desired height */
   }
 }

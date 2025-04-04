@@ -27,6 +27,10 @@ import {
   teamHome,
   testimonialsHome,
 } from '~/shared/data/pages/home.data';
+import SquareDiv from '~/components/widgets/home_div';
+import CarouselCustomNavigation from '~/components/widgets/Carousel';
+
+
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -35,7 +39,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
+
       <Hero {...heroHome} />
+      <CarouselCustomNavigation/>
       <SocialProof {...socialProofHome} />
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
@@ -47,6 +53,7 @@ export default function Page() {
       <Team {...teamHome} />
       <Contact {...contactHome} />
       <CallToAction2 {...callToAction2Home} />
+      
     </>
   );
 }

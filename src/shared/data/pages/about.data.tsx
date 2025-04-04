@@ -36,6 +36,7 @@ import {
   IconUser,
 } from '@tabler/icons-react';
 
+
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
   title: 'Great companies are made by great people',
